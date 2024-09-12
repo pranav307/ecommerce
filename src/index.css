@@ -1,0 +1,55 @@
+/* Ensure the footer stays at the bottom of the page */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+footer {
+  background-color: #232f3e; /* Dark background like Amazon */
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.online {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.online a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.online a:hover {
+  color: #febd69; /* Hover effect */
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #febd69;
+}
