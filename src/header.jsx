@@ -1,9 +1,10 @@
 import React from "react";
 import Logo from "./logo";
-import Language from "./language";
+import LanguageDropdown from "./language";
 import Signup from "./signup";
 import Login from "./login";
 import Cart from "./cart";
+
 const Header = () => {
   return (
     <nav className="navbar">
@@ -21,7 +22,10 @@ const Header = () => {
             Search
           </button>
         </form>
-        <Language></Language>
+        <div className="languageprefrece">
+          <h1>Select Language</h1>
+          <LanguageDropdown />
+        </div>
         <Signup></Signup>&& <Login></Login>
         <Cart></Cart>
       </div>
